@@ -1,7 +1,9 @@
 using connector;
+using ChecklistCQP;
 using MySqlConnector;
+using ChecklistCQP.Properties;
 
-namespace ChecklistCQP
+namespace login
 {
     public partial class Form1 : Form
     {
@@ -12,47 +14,6 @@ namespace ChecklistCQP
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void bttn_registrarCQP_Click(object sender, EventArgs e)
-        {
-            if (!checkLoginNull())
-            {
-                MessageBox.Show("Por favor, preencha os campos vazios", "..::AVISO::..", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            createRegister();
-        }
-
-        private void createRegister()
-        {
-            if (!checkUser())
-            {
-                MessageBox.Show("Nome de usuário já existente!", "..::AVISO::..", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            connection con = new connection();
-            MySqlCommand cmd = new MySqlCommand($"Insert into Testadores values ('{txt_nome.Text.Trim()}', '{txt_senha.Text}')", con.Con);
-            cmd.ExecuteNonQuery();
-        }
-
-        private bool checkUser()
-        {
-            connection con = new connection();
-
-            MySqlCommand cmd = new MySqlCommand($"Select * from Testadores where nome like '{txt_nome.Text.Trim()}'", con.Con);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.HasRows)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
         }
 
         private bool checkLoginNull()
@@ -87,10 +48,18 @@ namespace ChecklistCQP
 
             if (reader.HasRows)
             {
-                MessageBox.Show("Logado com sucesso!", "..::Sucesso::..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                testador = txt_nome.Text;
-                loginProcedures();
-                return;
+                lbl_status.Text = "STATUS: LOGANDO";
+                lbl_status.ForeColor = Color.Green;
+                Settings.Default.login = txt_nome.Text;
+                Settings.Default.Save();
+                System.Threading.Thread.Sleep(1000);
+
+                this.Hide();
+
+                Form2 form2 = new Form2();
+                form2.Show();
+
+                form2.FormClosed += (s, args) => this.Close();
             }
             else
             {
@@ -98,22 +67,27 @@ namespace ChecklistCQP
             }
         }
 
-        private void loginProcedures()
+        private void txt_senha_Leave(object sender, EventArgs e)
         {
-            lbl_testador.Text += $" {testador.ToUpper()}";
-            lbl_datahora.Text += DateTime.Now.ToString();
-            lbl_logue.Enabled = false;
-            lbl_logue.Visible = false;
+            userLogin();
+        }
 
-            lbl_datahora.Visible = true;
-            lbl_idtarefa.Visible = true;
-            lbl_testador.Visible = true;
-            lbl_tela.Visible = true;
-            txt_idtarefa.Visible = true;
-            memo_tela.Visible = true;
+        private void txt_senha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                userLogin();
+            }
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-            tabControl1.SelectTab(1);
+            if (Settings.Default.login != "")
+            {
+                txt_nome.Text = Settings.Default.login;
+                txt_senha.Focus();
+            }
         }
     }
 }

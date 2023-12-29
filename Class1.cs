@@ -10,7 +10,7 @@ namespace connector
     public class connection
     {
         private MySqlConnection con;
-        private string host = "localhost";
+        private string host = "10.1.1.170";
         private Int16 Port = 3306;
         private string user = "root";
         private string pwd = "vssql";
