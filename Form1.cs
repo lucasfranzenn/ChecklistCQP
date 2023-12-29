@@ -5,6 +5,10 @@ namespace ChecklistCQP
 {
     public partial class Form1 : Form
     {
+        private string testador;
+
+        public string Testador { get => testador; set => testador = value; }
+
         public Form1()
         {
             InitializeComponent();
@@ -84,6 +88,7 @@ namespace ChecklistCQP
             if (reader.HasRows)
             {
                 MessageBox.Show("Logado com sucesso!", "..::Sucesso::..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                testador = txt_nome.Text;
                 loginProcedures();
                 return;
             }
@@ -95,7 +100,20 @@ namespace ChecklistCQP
 
         private void loginProcedures()
         {
+            lbl_testador.Text += $" {testador.ToUpper()}";
+            lbl_datahora.Text += DateTime.Now.ToString();
+            lbl_logue.Enabled = false;
+            lbl_logue.Visible = false;
 
+            lbl_datahora.Visible = true;
+            lbl_idtarefa.Visible = true;
+            lbl_testador.Visible = true;
+            lbl_tela.Visible = true;
+            txt_idtarefa.Visible = true;
+            memo_tela.Visible = true;
+
+
+            tabControl1.SelectTab(1);
         }
     }
 }
