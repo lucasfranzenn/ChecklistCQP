@@ -477,11 +477,10 @@
             cb_id1.AutoSize = true;
             cb_id1.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id1.Dock = DockStyle.Fill;
-            cb_id1.Enabled = false;
             cb_id1.Location = new Point(504, 27);
             cb_id1.Name = "cb_id1";
             cb_id1.Size = new Size(77, 16);
-            cb_id1.TabIndex = 33;
+            cb_id1.TabIndex = 4;
             cb_id1.TextAlign = ContentAlignment.MiddleRight;
             cb_id1.UseVisualStyleBackColor = true;
             // 
@@ -784,11 +783,10 @@
             cb_id2.AutoSize = true;
             cb_id2.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id2.Dock = DockStyle.Fill;
-            cb_id2.Enabled = false;
             cb_id2.Location = new Point(504, 50);
             cb_id2.Name = "cb_id2";
             cb_id2.Size = new Size(77, 16);
-            cb_id2.TabIndex = 34;
+            cb_id2.TabIndex = 7;
             cb_id2.UseVisualStyleBackColor = true;
             // 
             // cb_id3
@@ -796,11 +794,10 @@
             cb_id3.AutoSize = true;
             cb_id3.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id3.Dock = DockStyle.Fill;
-            cb_id3.Enabled = false;
             cb_id3.Location = new Point(504, 73);
             cb_id3.Name = "cb_id3";
             cb_id3.Size = new Size(77, 16);
-            cb_id3.TabIndex = 35;
+            cb_id3.TabIndex = 10;
             cb_id3.UseVisualStyleBackColor = true;
             // 
             // cb_id4
@@ -808,11 +805,10 @@
             cb_id4.AutoSize = true;
             cb_id4.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id4.Dock = DockStyle.Fill;
-            cb_id4.Enabled = false;
             cb_id4.Location = new Point(504, 96);
             cb_id4.Name = "cb_id4";
             cb_id4.Size = new Size(77, 16);
-            cb_id4.TabIndex = 36;
+            cb_id4.TabIndex = 13;
             cb_id4.UseVisualStyleBackColor = true;
             // 
             // cb_id5
@@ -820,11 +816,10 @@
             cb_id5.AutoSize = true;
             cb_id5.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id5.Dock = DockStyle.Fill;
-            cb_id5.Enabled = false;
             cb_id5.Location = new Point(504, 119);
             cb_id5.Name = "cb_id5";
             cb_id5.Size = new Size(77, 16);
-            cb_id5.TabIndex = 37;
+            cb_id5.TabIndex = 16;
             cb_id5.UseVisualStyleBackColor = true;
             // 
             // cb_id6
@@ -832,11 +827,10 @@
             cb_id6.AutoSize = true;
             cb_id6.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id6.Dock = DockStyle.Fill;
-            cb_id6.Enabled = false;
             cb_id6.Location = new Point(504, 142);
             cb_id6.Name = "cb_id6";
             cb_id6.Size = new Size(77, 16);
-            cb_id6.TabIndex = 38;
+            cb_id6.TabIndex = 19;
             cb_id6.UseVisualStyleBackColor = true;
             // 
             // cb_id7
@@ -844,11 +838,10 @@
             cb_id7.AutoSize = true;
             cb_id7.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id7.Dock = DockStyle.Fill;
-            cb_id7.Enabled = false;
             cb_id7.Location = new Point(504, 165);
             cb_id7.Name = "cb_id7";
             cb_id7.Size = new Size(77, 16);
-            cb_id7.TabIndex = 39;
+            cb_id7.TabIndex = 22;
             cb_id7.UseVisualStyleBackColor = true;
             // 
             // cb_id8
@@ -856,11 +849,10 @@
             cb_id8.AutoSize = true;
             cb_id8.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id8.Dock = DockStyle.Fill;
-            cb_id8.Enabled = false;
             cb_id8.Location = new Point(504, 188);
             cb_id8.Name = "cb_id8";
             cb_id8.Size = new Size(77, 16);
-            cb_id8.TabIndex = 40;
+            cb_id8.TabIndex = 25;
             cb_id8.UseVisualStyleBackColor = true;
             // 
             // cb_id9
@@ -868,11 +860,10 @@
             cb_id9.AutoSize = true;
             cb_id9.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id9.Dock = DockStyle.Fill;
-            cb_id9.Enabled = false;
             cb_id9.Location = new Point(504, 211);
             cb_id9.Name = "cb_id9";
             cb_id9.Size = new Size(77, 16);
-            cb_id9.TabIndex = 41;
+            cb_id9.TabIndex = 28;
             cb_id9.UseVisualStyleBackColor = true;
             // 
             // cb_id10
@@ -880,11 +871,10 @@
             cb_id10.AutoSize = true;
             cb_id10.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id10.Dock = DockStyle.Fill;
-            cb_id10.Enabled = false;
             cb_id10.Location = new Point(504, 234);
             cb_id10.Name = "cb_id10";
             cb_id10.Size = new Size(77, 16);
-            cb_id10.TabIndex = 42;
+            cb_id10.TabIndex = 30;
             cb_id10.UseVisualStyleBackColor = true;
             // 
             // cb_id11
@@ -892,11 +882,10 @@
             cb_id11.AutoSize = true;
             cb_id11.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id11.Dock = DockStyle.Fill;
-            cb_id11.Enabled = false;
             cb_id11.Location = new Point(504, 257);
             cb_id11.Name = "cb_id11";
             cb_id11.Size = new Size(77, 16);
-            cb_id11.TabIndex = 43;
+            cb_id11.TabIndex = 33;
             cb_id11.UseVisualStyleBackColor = true;
             // 
             // cb_id12
@@ -904,11 +893,10 @@
             cb_id12.AutoSize = true;
             cb_id12.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id12.Dock = DockStyle.Fill;
-            cb_id12.Enabled = false;
             cb_id12.Location = new Point(504, 280);
             cb_id12.Name = "cb_id12";
             cb_id12.Size = new Size(77, 16);
-            cb_id12.TabIndex = 44;
+            cb_id12.TabIndex = 36;
             cb_id12.UseVisualStyleBackColor = true;
             // 
             // cb_id13
@@ -916,11 +904,10 @@
             cb_id13.AutoSize = true;
             cb_id13.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id13.Dock = DockStyle.Fill;
-            cb_id13.Enabled = false;
             cb_id13.Location = new Point(504, 303);
             cb_id13.Name = "cb_id13";
             cb_id13.Size = new Size(77, 16);
-            cb_id13.TabIndex = 45;
+            cb_id13.TabIndex = 39;
             cb_id13.UseVisualStyleBackColor = true;
             // 
             // cb_id14
@@ -928,11 +915,10 @@
             cb_id14.AutoSize = true;
             cb_id14.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id14.Dock = DockStyle.Fill;
-            cb_id14.Enabled = false;
             cb_id14.Location = new Point(504, 326);
             cb_id14.Name = "cb_id14";
             cb_id14.Size = new Size(77, 16);
-            cb_id14.TabIndex = 46;
+            cb_id14.TabIndex = 42;
             cb_id14.UseVisualStyleBackColor = true;
             // 
             // cb_id15
@@ -940,11 +926,10 @@
             cb_id15.AutoSize = true;
             cb_id15.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id15.Dock = DockStyle.Fill;
-            cb_id15.Enabled = false;
             cb_id15.Location = new Point(504, 349);
             cb_id15.Name = "cb_id15";
             cb_id15.Size = new Size(77, 16);
-            cb_id15.TabIndex = 47;
+            cb_id15.TabIndex = 45;
             cb_id15.UseVisualStyleBackColor = true;
             // 
             // cb_id16
@@ -952,7 +937,6 @@
             cb_id16.AutoSize = true;
             cb_id16.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id16.Dock = DockStyle.Fill;
-            cb_id16.Enabled = false;
             cb_id16.Location = new Point(504, 372);
             cb_id16.Name = "cb_id16";
             cb_id16.Size = new Size(77, 16);
@@ -964,11 +948,10 @@
             cb_id17.AutoSize = true;
             cb_id17.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id17.Dock = DockStyle.Fill;
-            cb_id17.Enabled = false;
             cb_id17.Location = new Point(504, 395);
             cb_id17.Name = "cb_id17";
             cb_id17.Size = new Size(77, 16);
-            cb_id17.TabIndex = 49;
+            cb_id17.TabIndex = 51;
             cb_id17.UseVisualStyleBackColor = true;
             // 
             // cb_id18
@@ -976,11 +959,10 @@
             cb_id18.AutoSize = true;
             cb_id18.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id18.Dock = DockStyle.Fill;
-            cb_id18.Enabled = false;
             cb_id18.Location = new Point(504, 418);
             cb_id18.Name = "cb_id18";
             cb_id18.Size = new Size(77, 16);
-            cb_id18.TabIndex = 50;
+            cb_id18.TabIndex = 54;
             cb_id18.UseVisualStyleBackColor = true;
             // 
             // cb_id19
@@ -988,11 +970,10 @@
             cb_id19.AutoSize = true;
             cb_id19.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id19.Dock = DockStyle.Fill;
-            cb_id19.Enabled = false;
             cb_id19.Location = new Point(504, 441);
             cb_id19.Name = "cb_id19";
             cb_id19.Size = new Size(77, 16);
-            cb_id19.TabIndex = 51;
+            cb_id19.TabIndex = 57;
             cb_id19.UseVisualStyleBackColor = true;
             // 
             // cb_id20
@@ -1000,11 +981,10 @@
             cb_id20.AutoSize = true;
             cb_id20.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id20.Dock = DockStyle.Fill;
-            cb_id20.Enabled = false;
             cb_id20.Location = new Point(504, 464);
             cb_id20.Name = "cb_id20";
             cb_id20.Size = new Size(77, 16);
-            cb_id20.TabIndex = 52;
+            cb_id20.TabIndex = 60;
             cb_id20.UseVisualStyleBackColor = true;
             // 
             // cb_id21
@@ -1012,11 +992,10 @@
             cb_id21.AutoSize = true;
             cb_id21.CheckAlign = ContentAlignment.MiddleCenter;
             cb_id21.Dock = DockStyle.Fill;
-            cb_id21.Enabled = false;
             cb_id21.Location = new Point(504, 487);
             cb_id21.Name = "cb_id21";
             cb_id21.Size = new Size(77, 17);
-            cb_id21.TabIndex = 53;
+            cb_id21.TabIndex = 63;
             cb_id21.UseVisualStyleBackColor = true;
             // 
             // lbl_IDdesc18
@@ -1178,12 +1157,11 @@
             txt_TarefaRelacionada1.BackColor = SystemColors.Control;
             txt_TarefaRelacionada1.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada1.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada1.Enabled = false;
             txt_TarefaRelacionada1.Location = new Point(588, 27);
             txt_TarefaRelacionada1.Multiline = true;
             txt_TarefaRelacionada1.Name = "txt_TarefaRelacionada1";
             txt_TarefaRelacionada1.Size = new Size(77, 16);
-            txt_TarefaRelacionada1.TabIndex = 68;
+            txt_TarefaRelacionada1.TabIndex = 5;
             txt_TarefaRelacionada1.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada2
@@ -1191,12 +1169,11 @@
             txt_TarefaRelacionada2.BackColor = SystemColors.Control;
             txt_TarefaRelacionada2.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada2.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada2.Enabled = false;
             txt_TarefaRelacionada2.Location = new Point(588, 50);
             txt_TarefaRelacionada2.Multiline = true;
             txt_TarefaRelacionada2.Name = "txt_TarefaRelacionada2";
             txt_TarefaRelacionada2.Size = new Size(77, 16);
-            txt_TarefaRelacionada2.TabIndex = 69;
+            txt_TarefaRelacionada2.TabIndex = 8;
             txt_TarefaRelacionada2.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada3
@@ -1204,12 +1181,11 @@
             txt_TarefaRelacionada3.BackColor = SystemColors.Control;
             txt_TarefaRelacionada3.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada3.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada3.Enabled = false;
             txt_TarefaRelacionada3.Location = new Point(588, 73);
             txt_TarefaRelacionada3.Multiline = true;
             txt_TarefaRelacionada3.Name = "txt_TarefaRelacionada3";
             txt_TarefaRelacionada3.Size = new Size(77, 16);
-            txt_TarefaRelacionada3.TabIndex = 70;
+            txt_TarefaRelacionada3.TabIndex = 11;
             txt_TarefaRelacionada3.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada4
@@ -1217,12 +1193,11 @@
             txt_TarefaRelacionada4.BackColor = SystemColors.Control;
             txt_TarefaRelacionada4.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada4.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada4.Enabled = false;
             txt_TarefaRelacionada4.Location = new Point(588, 96);
             txt_TarefaRelacionada4.Multiline = true;
             txt_TarefaRelacionada4.Name = "txt_TarefaRelacionada4";
             txt_TarefaRelacionada4.Size = new Size(77, 16);
-            txt_TarefaRelacionada4.TabIndex = 71;
+            txt_TarefaRelacionada4.TabIndex = 14;
             txt_TarefaRelacionada4.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada5
@@ -1230,12 +1205,11 @@
             txt_TarefaRelacionada5.BackColor = SystemColors.Control;
             txt_TarefaRelacionada5.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada5.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada5.Enabled = false;
             txt_TarefaRelacionada5.Location = new Point(588, 119);
             txt_TarefaRelacionada5.Multiline = true;
             txt_TarefaRelacionada5.Name = "txt_TarefaRelacionada5";
             txt_TarefaRelacionada5.Size = new Size(77, 16);
-            txt_TarefaRelacionada5.TabIndex = 72;
+            txt_TarefaRelacionada5.TabIndex = 17;
             txt_TarefaRelacionada5.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada6
@@ -1243,12 +1217,11 @@
             txt_TarefaRelacionada6.BackColor = SystemColors.Control;
             txt_TarefaRelacionada6.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada6.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada6.Enabled = false;
             txt_TarefaRelacionada6.Location = new Point(588, 142);
             txt_TarefaRelacionada6.Multiline = true;
             txt_TarefaRelacionada6.Name = "txt_TarefaRelacionada6";
             txt_TarefaRelacionada6.Size = new Size(77, 16);
-            txt_TarefaRelacionada6.TabIndex = 73;
+            txt_TarefaRelacionada6.TabIndex = 20;
             txt_TarefaRelacionada6.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada7
@@ -1256,12 +1229,11 @@
             txt_TarefaRelacionada7.BackColor = SystemColors.Control;
             txt_TarefaRelacionada7.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada7.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada7.Enabled = false;
             txt_TarefaRelacionada7.Location = new Point(588, 165);
             txt_TarefaRelacionada7.Multiline = true;
             txt_TarefaRelacionada7.Name = "txt_TarefaRelacionada7";
             txt_TarefaRelacionada7.Size = new Size(77, 16);
-            txt_TarefaRelacionada7.TabIndex = 74;
+            txt_TarefaRelacionada7.TabIndex = 23;
             txt_TarefaRelacionada7.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada8
@@ -1269,12 +1241,11 @@
             txt_TarefaRelacionada8.BackColor = SystemColors.Control;
             txt_TarefaRelacionada8.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada8.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada8.Enabled = false;
             txt_TarefaRelacionada8.Location = new Point(588, 188);
             txt_TarefaRelacionada8.Multiline = true;
             txt_TarefaRelacionada8.Name = "txt_TarefaRelacionada8";
             txt_TarefaRelacionada8.Size = new Size(77, 16);
-            txt_TarefaRelacionada8.TabIndex = 75;
+            txt_TarefaRelacionada8.TabIndex = 26;
             txt_TarefaRelacionada8.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada9
@@ -1282,12 +1253,11 @@
             txt_TarefaRelacionada9.BackColor = SystemColors.Control;
             txt_TarefaRelacionada9.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada9.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada9.Enabled = false;
             txt_TarefaRelacionada9.Location = new Point(588, 211);
             txt_TarefaRelacionada9.Multiline = true;
             txt_TarefaRelacionada9.Name = "txt_TarefaRelacionada9";
             txt_TarefaRelacionada9.Size = new Size(77, 16);
-            txt_TarefaRelacionada9.TabIndex = 76;
+            txt_TarefaRelacionada9.TabIndex = 28;
             txt_TarefaRelacionada9.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada10
@@ -1295,12 +1265,11 @@
             txt_TarefaRelacionada10.BackColor = SystemColors.Control;
             txt_TarefaRelacionada10.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada10.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada10.Enabled = false;
             txt_TarefaRelacionada10.Location = new Point(588, 234);
             txt_TarefaRelacionada10.Multiline = true;
             txt_TarefaRelacionada10.Name = "txt_TarefaRelacionada10";
             txt_TarefaRelacionada10.Size = new Size(77, 16);
-            txt_TarefaRelacionada10.TabIndex = 77;
+            txt_TarefaRelacionada10.TabIndex = 31;
             txt_TarefaRelacionada10.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada11
@@ -1308,12 +1277,11 @@
             txt_TarefaRelacionada11.BackColor = SystemColors.Control;
             txt_TarefaRelacionada11.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada11.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada11.Enabled = false;
             txt_TarefaRelacionada11.Location = new Point(588, 257);
             txt_TarefaRelacionada11.Multiline = true;
             txt_TarefaRelacionada11.Name = "txt_TarefaRelacionada11";
             txt_TarefaRelacionada11.Size = new Size(77, 16);
-            txt_TarefaRelacionada11.TabIndex = 78;
+            txt_TarefaRelacionada11.TabIndex = 34;
             txt_TarefaRelacionada11.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada12
@@ -1321,12 +1289,11 @@
             txt_TarefaRelacionada12.BackColor = SystemColors.Control;
             txt_TarefaRelacionada12.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada12.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada12.Enabled = false;
             txt_TarefaRelacionada12.Location = new Point(588, 280);
             txt_TarefaRelacionada12.Multiline = true;
             txt_TarefaRelacionada12.Name = "txt_TarefaRelacionada12";
             txt_TarefaRelacionada12.Size = new Size(77, 16);
-            txt_TarefaRelacionada12.TabIndex = 79;
+            txt_TarefaRelacionada12.TabIndex = 37;
             txt_TarefaRelacionada12.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada13
@@ -1334,12 +1301,11 @@
             txt_TarefaRelacionada13.BackColor = SystemColors.Control;
             txt_TarefaRelacionada13.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada13.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada13.Enabled = false;
             txt_TarefaRelacionada13.Location = new Point(588, 303);
             txt_TarefaRelacionada13.Multiline = true;
             txt_TarefaRelacionada13.Name = "txt_TarefaRelacionada13";
             txt_TarefaRelacionada13.Size = new Size(77, 16);
-            txt_TarefaRelacionada13.TabIndex = 80;
+            txt_TarefaRelacionada13.TabIndex = 40;
             txt_TarefaRelacionada13.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada14
@@ -1347,12 +1313,11 @@
             txt_TarefaRelacionada14.BackColor = SystemColors.Control;
             txt_TarefaRelacionada14.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada14.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada14.Enabled = false;
             txt_TarefaRelacionada14.Location = new Point(588, 326);
             txt_TarefaRelacionada14.Multiline = true;
             txt_TarefaRelacionada14.Name = "txt_TarefaRelacionada14";
             txt_TarefaRelacionada14.Size = new Size(77, 16);
-            txt_TarefaRelacionada14.TabIndex = 81;
+            txt_TarefaRelacionada14.TabIndex = 43;
             txt_TarefaRelacionada14.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada15
@@ -1360,12 +1325,11 @@
             txt_TarefaRelacionada15.BackColor = SystemColors.Control;
             txt_TarefaRelacionada15.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada15.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada15.Enabled = false;
             txt_TarefaRelacionada15.Location = new Point(588, 349);
             txt_TarefaRelacionada15.Multiline = true;
             txt_TarefaRelacionada15.Name = "txt_TarefaRelacionada15";
             txt_TarefaRelacionada15.Size = new Size(77, 16);
-            txt_TarefaRelacionada15.TabIndex = 82;
+            txt_TarefaRelacionada15.TabIndex = 46;
             txt_TarefaRelacionada15.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada16
@@ -1373,12 +1337,11 @@
             txt_TarefaRelacionada16.BackColor = SystemColors.Control;
             txt_TarefaRelacionada16.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada16.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada16.Enabled = false;
             txt_TarefaRelacionada16.Location = new Point(588, 372);
             txt_TarefaRelacionada16.Multiline = true;
             txt_TarefaRelacionada16.Name = "txt_TarefaRelacionada16";
             txt_TarefaRelacionada16.Size = new Size(77, 16);
-            txt_TarefaRelacionada16.TabIndex = 83;
+            txt_TarefaRelacionada16.TabIndex = 49;
             txt_TarefaRelacionada16.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada17
@@ -1386,12 +1349,11 @@
             txt_TarefaRelacionada17.BackColor = SystemColors.Control;
             txt_TarefaRelacionada17.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada17.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada17.Enabled = false;
             txt_TarefaRelacionada17.Location = new Point(588, 395);
             txt_TarefaRelacionada17.Multiline = true;
             txt_TarefaRelacionada17.Name = "txt_TarefaRelacionada17";
             txt_TarefaRelacionada17.Size = new Size(77, 16);
-            txt_TarefaRelacionada17.TabIndex = 84;
+            txt_TarefaRelacionada17.TabIndex = 52;
             txt_TarefaRelacionada17.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada18
@@ -1399,12 +1361,11 @@
             txt_TarefaRelacionada18.BackColor = SystemColors.Control;
             txt_TarefaRelacionada18.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada18.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada18.Enabled = false;
             txt_TarefaRelacionada18.Location = new Point(588, 418);
             txt_TarefaRelacionada18.Multiline = true;
             txt_TarefaRelacionada18.Name = "txt_TarefaRelacionada18";
             txt_TarefaRelacionada18.Size = new Size(77, 16);
-            txt_TarefaRelacionada18.TabIndex = 85;
+            txt_TarefaRelacionada18.TabIndex = 55;
             txt_TarefaRelacionada18.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada19
@@ -1412,12 +1373,11 @@
             txt_TarefaRelacionada19.BackColor = SystemColors.Control;
             txt_TarefaRelacionada19.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada19.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada19.Enabled = false;
             txt_TarefaRelacionada19.Location = new Point(588, 441);
             txt_TarefaRelacionada19.Multiline = true;
             txt_TarefaRelacionada19.Name = "txt_TarefaRelacionada19";
             txt_TarefaRelacionada19.Size = new Size(77, 16);
-            txt_TarefaRelacionada19.TabIndex = 86;
+            txt_TarefaRelacionada19.TabIndex = 58;
             txt_TarefaRelacionada19.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada20
@@ -1425,12 +1385,11 @@
             txt_TarefaRelacionada20.BackColor = SystemColors.Control;
             txt_TarefaRelacionada20.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada20.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada20.Enabled = false;
             txt_TarefaRelacionada20.Location = new Point(588, 464);
             txt_TarefaRelacionada20.Multiline = true;
             txt_TarefaRelacionada20.Name = "txt_TarefaRelacionada20";
             txt_TarefaRelacionada20.Size = new Size(77, 16);
-            txt_TarefaRelacionada20.TabIndex = 87;
+            txt_TarefaRelacionada20.TabIndex = 61;
             txt_TarefaRelacionada20.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_TarefaRelacionada21
@@ -1438,12 +1397,11 @@
             txt_TarefaRelacionada21.BackColor = SystemColors.Control;
             txt_TarefaRelacionada21.BorderStyle = BorderStyle.FixedSingle;
             txt_TarefaRelacionada21.Dock = DockStyle.Fill;
-            txt_TarefaRelacionada21.Enabled = false;
             txt_TarefaRelacionada21.Location = new Point(588, 487);
             txt_TarefaRelacionada21.Multiline = true;
             txt_TarefaRelacionada21.Name = "txt_TarefaRelacionada21";
             txt_TarefaRelacionada21.Size = new Size(77, 17);
-            txt_TarefaRelacionada21.TabIndex = 88;
+            txt_TarefaRelacionada21.TabIndex = 64;
             txt_TarefaRelacionada21.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_obs1
@@ -1451,252 +1409,231 @@
             txt_obs1.BackColor = SystemColors.Control;
             txt_obs1.BorderStyle = BorderStyle.FixedSingle;
             txt_obs1.Dock = DockStyle.Fill;
-            txt_obs1.Enabled = false;
             txt_obs1.Location = new Point(672, 27);
             txt_obs1.Multiline = true;
             txt_obs1.Name = "txt_obs1";
             txt_obs1.Size = new Size(161, 16);
-            txt_obs1.TabIndex = 89;
+            txt_obs1.TabIndex = 6;
             // 
             // txt_obs2
             // 
             txt_obs2.BackColor = SystemColors.Control;
             txt_obs2.BorderStyle = BorderStyle.FixedSingle;
             txt_obs2.Dock = DockStyle.Fill;
-            txt_obs2.Enabled = false;
             txt_obs2.Location = new Point(672, 50);
             txt_obs2.Multiline = true;
             txt_obs2.Name = "txt_obs2";
             txt_obs2.Size = new Size(161, 16);
-            txt_obs2.TabIndex = 90;
+            txt_obs2.TabIndex = 9;
             // 
             // txt_obs3
             // 
             txt_obs3.BackColor = SystemColors.Control;
             txt_obs3.BorderStyle = BorderStyle.FixedSingle;
             txt_obs3.Dock = DockStyle.Fill;
-            txt_obs3.Enabled = false;
             txt_obs3.Location = new Point(672, 73);
             txt_obs3.Multiline = true;
             txt_obs3.Name = "txt_obs3";
             txt_obs3.Size = new Size(161, 16);
-            txt_obs3.TabIndex = 91;
+            txt_obs3.TabIndex = 12;
             // 
             // txt_obs4
             // 
             txt_obs4.BackColor = SystemColors.Control;
             txt_obs4.BorderStyle = BorderStyle.FixedSingle;
             txt_obs4.Dock = DockStyle.Fill;
-            txt_obs4.Enabled = false;
             txt_obs4.Location = new Point(672, 96);
             txt_obs4.Multiline = true;
             txt_obs4.Name = "txt_obs4";
             txt_obs4.Size = new Size(161, 16);
-            txt_obs4.TabIndex = 92;
+            txt_obs4.TabIndex = 15;
             // 
             // txt_obs5
             // 
             txt_obs5.BackColor = SystemColors.Control;
             txt_obs5.BorderStyle = BorderStyle.FixedSingle;
             txt_obs5.Dock = DockStyle.Fill;
-            txt_obs5.Enabled = false;
             txt_obs5.Location = new Point(672, 119);
             txt_obs5.Multiline = true;
             txt_obs5.Name = "txt_obs5";
             txt_obs5.Size = new Size(161, 16);
-            txt_obs5.TabIndex = 93;
+            txt_obs5.TabIndex = 18;
             // 
             // txt_obs6
             // 
             txt_obs6.BackColor = SystemColors.Control;
             txt_obs6.BorderStyle = BorderStyle.FixedSingle;
             txt_obs6.Dock = DockStyle.Fill;
-            txt_obs6.Enabled = false;
             txt_obs6.Location = new Point(672, 142);
             txt_obs6.Multiline = true;
             txt_obs6.Name = "txt_obs6";
             txt_obs6.Size = new Size(161, 16);
-            txt_obs6.TabIndex = 94;
+            txt_obs6.TabIndex = 21;
             // 
             // txt_obs7
             // 
             txt_obs7.BackColor = SystemColors.Control;
             txt_obs7.BorderStyle = BorderStyle.FixedSingle;
             txt_obs7.Dock = DockStyle.Fill;
-            txt_obs7.Enabled = false;
             txt_obs7.Location = new Point(672, 165);
             txt_obs7.Multiline = true;
             txt_obs7.Name = "txt_obs7";
             txt_obs7.Size = new Size(161, 16);
-            txt_obs7.TabIndex = 95;
+            txt_obs7.TabIndex = 24;
             // 
             // txt_obs8
             // 
             txt_obs8.BackColor = SystemColors.Control;
             txt_obs8.BorderStyle = BorderStyle.FixedSingle;
             txt_obs8.Dock = DockStyle.Fill;
-            txt_obs8.Enabled = false;
             txt_obs8.Location = new Point(672, 188);
             txt_obs8.Multiline = true;
             txt_obs8.Name = "txt_obs8";
             txt_obs8.Size = new Size(161, 16);
-            txt_obs8.TabIndex = 96;
+            txt_obs8.TabIndex = 27;
             // 
             // txt_obs9
             // 
             txt_obs9.BackColor = SystemColors.Control;
             txt_obs9.BorderStyle = BorderStyle.FixedSingle;
             txt_obs9.Dock = DockStyle.Fill;
-            txt_obs9.Enabled = false;
             txt_obs9.Location = new Point(672, 211);
             txt_obs9.Multiline = true;
             txt_obs9.Name = "txt_obs9";
             txt_obs9.Size = new Size(161, 16);
-            txt_obs9.TabIndex = 97;
+            txt_obs9.TabIndex = 29;
             // 
             // txt_obs10
             // 
             txt_obs10.BackColor = SystemColors.Control;
             txt_obs10.BorderStyle = BorderStyle.FixedSingle;
             txt_obs10.Dock = DockStyle.Fill;
-            txt_obs10.Enabled = false;
             txt_obs10.Location = new Point(672, 234);
             txt_obs10.Multiline = true;
             txt_obs10.Name = "txt_obs10";
             txt_obs10.Size = new Size(161, 16);
-            txt_obs10.TabIndex = 98;
+            txt_obs10.TabIndex = 32;
             // 
             // txt_obs11
             // 
             txt_obs11.BackColor = SystemColors.Control;
             txt_obs11.BorderStyle = BorderStyle.FixedSingle;
             txt_obs11.Dock = DockStyle.Fill;
-            txt_obs11.Enabled = false;
             txt_obs11.Location = new Point(672, 257);
             txt_obs11.Multiline = true;
             txt_obs11.Name = "txt_obs11";
             txt_obs11.Size = new Size(161, 16);
-            txt_obs11.TabIndex = 99;
+            txt_obs11.TabIndex = 35;
             // 
             // txt_obs12
             // 
             txt_obs12.BackColor = SystemColors.Control;
             txt_obs12.BorderStyle = BorderStyle.FixedSingle;
             txt_obs12.Dock = DockStyle.Fill;
-            txt_obs12.Enabled = false;
             txt_obs12.Location = new Point(672, 280);
             txt_obs12.Multiline = true;
             txt_obs12.Name = "txt_obs12";
             txt_obs12.Size = new Size(161, 16);
-            txt_obs12.TabIndex = 100;
+            txt_obs12.TabIndex = 38;
             // 
             // txt_obs13
             // 
             txt_obs13.BackColor = SystemColors.Control;
             txt_obs13.BorderStyle = BorderStyle.FixedSingle;
             txt_obs13.Dock = DockStyle.Fill;
-            txt_obs13.Enabled = false;
             txt_obs13.Location = new Point(672, 303);
             txt_obs13.Multiline = true;
             txt_obs13.Name = "txt_obs13";
             txt_obs13.Size = new Size(161, 16);
-            txt_obs13.TabIndex = 101;
+            txt_obs13.TabIndex = 41;
             // 
             // txt_obs14
             // 
             txt_obs14.BackColor = SystemColors.Control;
             txt_obs14.BorderStyle = BorderStyle.FixedSingle;
             txt_obs14.Dock = DockStyle.Fill;
-            txt_obs14.Enabled = false;
             txt_obs14.Location = new Point(672, 326);
             txt_obs14.Multiline = true;
             txt_obs14.Name = "txt_obs14";
             txt_obs14.Size = new Size(161, 16);
-            txt_obs14.TabIndex = 102;
+            txt_obs14.TabIndex = 44;
             // 
             // txt_obs15
             // 
             txt_obs15.BackColor = SystemColors.Control;
             txt_obs15.BorderStyle = BorderStyle.FixedSingle;
             txt_obs15.Dock = DockStyle.Fill;
-            txt_obs15.Enabled = false;
             txt_obs15.Location = new Point(672, 349);
             txt_obs15.Multiline = true;
             txt_obs15.Name = "txt_obs15";
             txt_obs15.Size = new Size(161, 16);
-            txt_obs15.TabIndex = 103;
+            txt_obs15.TabIndex = 47;
             // 
             // txt_obs16
             // 
             txt_obs16.BackColor = SystemColors.Control;
             txt_obs16.BorderStyle = BorderStyle.FixedSingle;
             txt_obs16.Dock = DockStyle.Fill;
-            txt_obs16.Enabled = false;
             txt_obs16.Location = new Point(672, 372);
             txt_obs16.Multiline = true;
             txt_obs16.Name = "txt_obs16";
             txt_obs16.Size = new Size(161, 16);
-            txt_obs16.TabIndex = 104;
+            txt_obs16.TabIndex = 50;
             // 
             // txt_obs17
             // 
             txt_obs17.BackColor = SystemColors.Control;
             txt_obs17.BorderStyle = BorderStyle.FixedSingle;
             txt_obs17.Dock = DockStyle.Fill;
-            txt_obs17.Enabled = false;
             txt_obs17.Location = new Point(672, 395);
             txt_obs17.Multiline = true;
             txt_obs17.Name = "txt_obs17";
             txt_obs17.Size = new Size(161, 16);
-            txt_obs17.TabIndex = 105;
+            txt_obs17.TabIndex = 53;
             // 
             // txt_obs18
             // 
             txt_obs18.BackColor = SystemColors.Control;
             txt_obs18.BorderStyle = BorderStyle.FixedSingle;
             txt_obs18.Dock = DockStyle.Fill;
-            txt_obs18.Enabled = false;
             txt_obs18.Location = new Point(672, 418);
             txt_obs18.Multiline = true;
             txt_obs18.Name = "txt_obs18";
             txt_obs18.Size = new Size(161, 16);
-            txt_obs18.TabIndex = 106;
+            txt_obs18.TabIndex = 56;
             // 
             // txt_obs19
             // 
             txt_obs19.BackColor = SystemColors.Control;
             txt_obs19.BorderStyle = BorderStyle.FixedSingle;
             txt_obs19.Dock = DockStyle.Fill;
-            txt_obs19.Enabled = false;
             txt_obs19.Location = new Point(672, 441);
             txt_obs19.Multiline = true;
             txt_obs19.Name = "txt_obs19";
             txt_obs19.Size = new Size(161, 16);
-            txt_obs19.TabIndex = 107;
+            txt_obs19.TabIndex = 59;
             // 
             // txt_obs20
             // 
             txt_obs20.BackColor = SystemColors.Control;
             txt_obs20.BorderStyle = BorderStyle.FixedSingle;
             txt_obs20.Dock = DockStyle.Fill;
-            txt_obs20.Enabled = false;
             txt_obs20.Location = new Point(672, 464);
             txt_obs20.Multiline = true;
             txt_obs20.Name = "txt_obs20";
             txt_obs20.Size = new Size(161, 16);
-            txt_obs20.TabIndex = 108;
+            txt_obs20.TabIndex = 62;
             // 
             // txt_obs21
             // 
             txt_obs21.BackColor = SystemColors.Control;
             txt_obs21.BorderStyle = BorderStyle.FixedSingle;
             txt_obs21.Dock = DockStyle.Fill;
-            txt_obs21.Enabled = false;
             txt_obs21.Location = new Point(672, 487);
             txt_obs21.Multiline = true;
             txt_obs21.Name = "txt_obs21";
             txt_obs21.Size = new Size(161, 17);
-            txt_obs21.TabIndex = 109;
+            txt_obs21.TabIndex = 65;
             // 
             // lbl_postFórum
             // 

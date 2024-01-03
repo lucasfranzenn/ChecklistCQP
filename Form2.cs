@@ -174,31 +174,11 @@ namespace ChecklistCQP
             lbl_postFórum.Visible = true;
             lbl_status.Visible = true;
             lbl_statusTarefa.Visible = true;
+            lbl_dataHoraFim.Visible = true;
             txt_post.Visible = true;
             memo_tela.Visible = true;
             bttn_gravar.Visible = true;
-
-            for (int i = 1; i < 22; i++)
-            {
-                string checkbox = "cb_id" + i;
-                CheckBox cb = (CheckBox)this.Controls.Find(checkbox, true).FirstOrDefault();
-
-                cb.Enabled = true;
-            }
-
-            for (int i = 1; i < 22; i++)
-            {
-                string textbox = "txt_TarefaRelacionada" + i;
-                TextBox tb = (TextBox)this.Controls.Find(textbox, true).FirstOrDefault();
-                tb.Enabled = true;
-            }
-
-            for (int i = 1; i < 22; i++)
-            {
-                string textbox = "txt_obs" + i;
-                TextBox tb = (TextBox)this.Controls.Find(textbox, true).FirstOrDefault();
-                tb.Enabled = true;
-            }
+            tableLayoutPanel1.Enabled = true;
 
             connection con = new connection();
             MySqlCommand cmd = new MySqlCommand($"select * from tarefas where id_Tarefa = {tarefa}", con.Con);
@@ -210,7 +190,8 @@ namespace ChecklistCQP
                 memo_tela.Text = reader["tela"].ToString();
                 txt_post.Text = reader["post_forum"].ToString();
                 lbl_statusTarefa.Text = (Convert.ToBoolean(reader["finalizada"])) ? "FINALIZADA" : "ABERTA";
-                lbl_statusTarefa.ForeColor = (lbl_statusTarefa.Text == "ABERTA") ? Color.Green : Color.Red;
+                lbl_statusTarefa.ForeColor = (lbl_statusTarefa.Text == "ABERTA") ? Color.Green : Color.Red; tableLayoutPanel1.Enabled = false;
+                lbl_dataHoraFim.Text = "DATA/HORA FIM:   " + reader["dataHora_fim"].ToString();
             }
 
             reader.Close();
@@ -266,12 +247,12 @@ namespace ChecklistCQP
         private void createTask()
         {
             connection con = new connection();
-            MySqlCommand cmd = new MySqlCommand($"Insert into tarefas values ({Convert.ToInt16(txt_idtarefa.Text)}, '{tester}', NULL, CURRENT_TIMESTAMP(), NULL, NULL, NULL)", con.Con);
+            MySqlCommand cmd = new MySqlCommand($"Insert into tarefas values ({Convert.ToInt16(txt_idtarefa.Text)}, '{tester}', NULL, CURRENT_TIMESTAMP(), NULL, NULL, 0)", con.Con);
             cmd.ExecuteNonQuery();
 
             for (int i = 1; i < 22; i++)
             {
-                cmd = new MySqlCommand($"Insert into requisitos values ({i}, {Convert.ToInt16(txt_idtarefa.Text)}, NULL, NULL, NULL)", con.Con);
+                cmd = new MySqlCommand($"Insert into requisitos values ({i}, {Convert.ToInt16(txt_idtarefa.Text)}, 0, NULL, NULL)", con.Con);
                 cmd.ExecuteNonQuery();
             }
         }
