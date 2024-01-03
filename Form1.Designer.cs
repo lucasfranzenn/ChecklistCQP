@@ -98,6 +98,7 @@ namespace login
             Controls.Add(lbl_senha);
             Controls.Add(txt_nome);
             Controls.Add(lbl_nome);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";

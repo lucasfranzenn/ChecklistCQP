@@ -85,7 +85,7 @@ namespace login
 
             if (Settings.Default.login != "")
             {
-                txt_nome.Text = Settings.Default.login;
+                txt_nome.Text = Settings.Default.login.ToUpper().Trim();
                 txt_senha.Focus();
             }
         }
