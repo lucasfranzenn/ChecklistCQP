@@ -11,12 +11,16 @@ using login;
 using connector;
 using ChecklistCQP.Properties;
 using MySqlConnector;
+using System.Reflection.Emit;
 
 namespace ChecklistCQP
 {
     public partial class Form2 : Form
     {
         private string tester = Settings.Default.login;
+        private const int num_requisitos = 21;
+        private System.Windows.Forms.Label l = new System.Windows.Forms.Label();
+        private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
 
         public string Tester { get => tester; set => tester = value; }
 
@@ -24,6 +28,11 @@ namespace ChecklistCQP
         {
             InitializeComponent();
             ConfigurarToolTip();
+            timer.Interval = 1000;
+            timer.Tick += (sender, e) =>
+            {
+                l.Visible = !l.Visible;
+            };
         }
 
         private void ConfigurarToolTip()
@@ -56,7 +65,7 @@ namespace ChecklistCQP
             cmd.Parameters.AddWithValue("@tarefa", tarefa);
             cmd.ExecuteNonQuery();
 
-            for (int i = 1; i < 22; i++)
+            for (int i = 1; i <= num_requisitos; i++)
             {
                 string checkbox = "cb_id" + i;
 
@@ -75,7 +84,7 @@ namespace ChecklistCQP
 
             }
 
-            for (int i = 1; i < 22; i++)
+            for (int i = 1; i <= num_requisitos; i++)
             {
                 string tarefaRelacionada = "txt_TarefaRelacionada" + i;
 
@@ -92,7 +101,7 @@ namespace ChecklistCQP
                 }
             }
 
-            for (int i = 1; i < 22; i++)
+            for (int i = 1; i <= num_requisitos; i++)
             {
                 string Obs = "txt_obs" + i;
 
@@ -125,6 +134,7 @@ namespace ChecklistCQP
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Tarefa finalizada", "..::MENU::..");
+                    lbl_statusTarefa.Text = setFinalizada();
                 }
             }
         }
@@ -189,15 +199,14 @@ namespace ChecklistCQP
                 lbl_datahora.Text = "DATA/HORA INICIO:   " + reader["dataHora_inicio"].ToString();
                 memo_tela.Text = reader["tela"].ToString();
                 txt_post.Text = reader["post_forum"].ToString();
-                lbl_statusTarefa.Text = (Convert.ToBoolean(reader["finalizada"])) ? "FINALIZADA" : "ABERTA";
-                lbl_statusTarefa.ForeColor = (lbl_statusTarefa.Text == "ABERTA") ? Color.Green : Color.Red; tableLayoutPanel1.Enabled = false;
+                lbl_statusTarefa.Text = (Convert.ToBoolean(reader["finalizada"])) ? setFinalizada() : setAberta();
                 lbl_dataHoraFim.Text = "DATA/HORA FIM:   " + reader["dataHora_fim"].ToString();
             }
 
             reader.Close();
 
 
-            for (int i = 1; i < 22; i++)
+            for (int i = 1; i <= num_requisitos; i++)
             {
                 cmd = new MySqlCommand($"Select finalizado from requisitos where id_tarefa = {tarefa} and id_requisito = {i}", con.Con);
                 reader = cmd.ExecuteReader();
@@ -212,7 +221,7 @@ namespace ChecklistCQP
 
             reader.Close();
 
-            for (int i = 0; i < 22; i++)
+            for (int i = 0; i <= num_requisitos; i++)
             {
                 cmd = new MySqlCommand($"Select BugRelacionado from requisitos where id_tarefa = {tarefa} and id_requisito = {i}", con.Con);
                 reader = cmd.ExecuteReader();
@@ -228,7 +237,7 @@ namespace ChecklistCQP
 
             reader.Close();
 
-            for (int i = 0; i < 22; i++)
+            for (int i = 0; i <= num_requisitos; i++)
             {
                 cmd = new MySqlCommand($"Select Observacao from requisitos where id_tarefa = {tarefa} and id_requisito = {i}", con.Con);
                 reader = cmd.ExecuteReader();
@@ -244,13 +253,45 @@ namespace ChecklistCQP
 
         }
 
+        private string setAberta()
+        {
+            lbl_statusTarefa.ForeColor = Color.Green;
+            
+            bttn_gravar.Enabled = true;
+            timer.Stop();
+            this.Controls.Remove(l);
+
+            return "ABERTA";
+        }
+
+        private string setFinalizada()
+        {
+            lbl_statusTarefa.ForeColor = Color.Red;
+            tableLayoutPanel1.Enabled = false;
+            
+            this.Controls.Add(l);
+            bttn_gravar.Enabled = false;
+            l.BringToFront();
+            l.AutoSize = true;
+            l.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            l.Location = new Point(70, 294);
+            l.Name = "label22";
+            l.Size = new Size(752, 74);
+            l.TabIndex = 56;
+            l.Text = "TAREFA FINALIZADA, CASO QUEIRA TESTAR NOVAMENTE\r\n PEÇA LIBERAÇÃO A UM SUPERVISOR";
+            l.TextAlign = ContentAlignment.MiddleCenter;
+            timer.Start();
+
+            return "FINALIZADA";
+        }
+
         private void createTask()
         {
             connection con = new connection();
             MySqlCommand cmd = new MySqlCommand($"Insert into tarefas values ({Convert.ToInt16(txt_idtarefa.Text)}, '{tester}', NULL, CURRENT_TIMESTAMP(), NULL, NULL, 0)", con.Con);
             cmd.ExecuteNonQuery();
 
-            for (int i = 1; i < 22; i++)
+            for (int i = 1; i <= num_requisitos; i++)
             {
                 cmd = new MySqlCommand($"Insert into requisitos values ({i}, {Convert.ToInt16(txt_idtarefa.Text)}, 0, NULL, NULL)", con.Con);
                 cmd.ExecuteNonQuery();

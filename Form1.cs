@@ -43,7 +43,7 @@ namespace login
         private void userLogin()
         {
             connection con = new connection();
-            MySqlCommand cmd = new MySqlCommand($"select * from testadores where nome like '{txt_nome.Text.Trim()}' and senha = '{txt_senha.Text.Trim()}'", con.Con);
+            MySqlCommand cmd = new MySqlCommand($"select * from testadores where nome like '{txt_nome.Text.Trim()}' and senha = AES_ENCRYPT('{txt_senha.Text.Trim()}', 2037)", con.Con);
             MySqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.HasRows)
@@ -52,7 +52,6 @@ namespace login
                 lbl_status.ForeColor = Color.Green;
                 Settings.Default.login = txt_nome.Text;
                 Settings.Default.Save();
-                System.Threading.Thread.Sleep(1000);
 
                 this.Hide();
 
@@ -86,7 +85,6 @@ namespace login
             if (Settings.Default.login != "")
             {
                 txt_nome.Text = Settings.Default.login.ToUpper().Trim();
-                txt_senha.Focus();
             }
         }
     }
