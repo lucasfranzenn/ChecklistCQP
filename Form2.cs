@@ -134,7 +134,7 @@ namespace ChecklistCQP
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Tarefa finalizada", "..::MENU::..");
-                    lbl_statusTarefa.Text = setFinalizada();
+                    updateTask();
                 }
             }
         }
@@ -176,7 +176,7 @@ namespace ChecklistCQP
 
         private void updateTask()
         {
-            int tarefa = Convert.ToInt16(txt_idtarefa.Text);
+            Int64 tarefa = Convert.ToInt64(txt_idtarefa.Text);
 
             lbl_testador.Visible = true;
             lbl_tela.Visible = true;
@@ -288,12 +288,12 @@ namespace ChecklistCQP
         private void createTask()
         {
             connection con = new connection();
-            MySqlCommand cmd = new MySqlCommand($"Insert into tarefas values ({Convert.ToInt16(txt_idtarefa.Text)}, '{tester}', NULL, CURRENT_TIMESTAMP(), NULL, NULL, 0)", con.Con);
+            MySqlCommand cmd = new MySqlCommand($"Insert into tarefas values ({(txt_idtarefa.Text)}, '{tester}', NULL, CURRENT_TIMESTAMP(), NULL, NULL, 0)", con.Con);
             cmd.ExecuteNonQuery();
 
             for (int i = 1; i <= num_requisitos; i++)
             {
-                cmd = new MySqlCommand($"Insert into requisitos values ({i}, {Convert.ToInt16(txt_idtarefa.Text)}, 0, NULL, NULL)", con.Con);
+                cmd = new MySqlCommand($"Insert into requisitos values ({i}, {(txt_idtarefa.Text)}, 0, NULL, NULL)", con.Con);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -301,7 +301,7 @@ namespace ChecklistCQP
         private bool checkTaskExists()
         {
             connection con = new connection();
-            MySqlCommand cmd = new MySqlCommand($"select * from Tarefas where id_tarefa = {Convert.ToInt16(txt_idtarefa.Text)}", con.Con);
+            MySqlCommand cmd = new MySqlCommand($"select * from Tarefas where id_tarefa = {(txt_idtarefa.Text)}", con.Con);
             MySqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.HasRows)
@@ -329,6 +329,13 @@ namespace ChecklistCQP
                 {
                     updateTask();
                 }
+            }
+        }
+        private void NumericTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

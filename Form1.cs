@@ -50,7 +50,7 @@ namespace login
             {
                 lbl_status.Text = "STATUS: LOGANDO";
                 lbl_status.ForeColor = Color.Green;
-                Settings.Default.login = txt_nome.Text;
+                Settings.Default.login = txt_nome.Text.ToUpper().Trim();
                 Settings.Default.Save();
 
                 this.Hide();
